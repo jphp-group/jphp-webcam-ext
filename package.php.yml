@@ -1,0 +1,50 @@
+name: jphp-webcam-ext
+version: 1.0.3
+
+plugins:
+- Hub
+- Doc
+- Gradle
+
+deps:
+  jphp-runtime: '*'
+  jphp-gui-ext: '*'
+
+devDeps:
+  jphp-core: '*'
+  dn-bundle-plugin: '*'
+
+
+gradle:
+  deps:
+  - 'com.github.sarxos:webcam-capture:0.3.12'
+
+config:
+  ignore:
+  - /sandbox/**
+  - /.idea/**
+  - /*.iml
+  - /.git/**
+  - /package.hub.yml
+  - /bundle/**
+  - /src-bundle/**
+  - /build
+  - /out/**
+  - /examples/**
+  - /screenshots/**
+  - /dn-sources/**
+  - /.gitignore
+  - /settings.gradle
+
+doc:
+  url-prefix: 'https://github.com/jphp-group/%name%/api-docs/'
+
+
+develnext-bundle:
+  version: 1.0.2
+  name: Webcam
+  author: broelik
+  icon: "develnext/bundle/webcam/icon32.png"
+  description: "Пакет для работы с веб-камерой"
+  group: "other"
+  class: "develnext\\bundle\\webcam\\WebcamBundle"

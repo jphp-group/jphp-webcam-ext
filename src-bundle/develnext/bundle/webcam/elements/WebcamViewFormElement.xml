@@ -1,0 +1,24 @@
+<element extends="NodeFormElement">
+    <properties>
+        <property code="openMode" name="Режим открытия веб-камеры" editor="enum" tooltip="">
+            <variants>
+                <variant value="NOT_USE">Не открывать</variant>
+                <variant value="SYNC">Открывать синхронно</variant>
+                <variant value="ASYNC">Открывать асинхронно</variant>
+            </variants>
+        </property>
+        <property code="closeMode" name="Режим закрытия веб-камеры" editor="enum" tooltip="">
+            <variants>
+                <variant value="NOT_USE">Не закрывать</variant>
+                <variant value="SYNC">Закрывать синхронно</variant>
+                <variant value="ASYNC">Закрывать асинхронно</variant>
+            </variants>
+        </property>
+        <property code="stretch" editor="boolean" name="Растягивание" />
+        <property code="centered" editor="boolean" name="Центрирование" />
+        <property code="flipX" editor="boolean" name="Отражать по X" />
+        <property code="flipY" editor="boolean" name="Отражать по Y" />
+
+        <property code="placeholderColor" name="Цвет фона" editor="color" />
+    </properties>
+</element>
